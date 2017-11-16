@@ -1,24 +1,24 @@
 {
-  "name": "javascript-development-environment",
-  "version": "1.0.0",
-  "description": "JavaScript development environment Pluralsight course by Cory House",
-  "scripts": {
-    "prestart": "babel-node buildScripts/startMessage.js",
-    "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
-    "open:src": "babel-node buildScripts/srcServer.js",
-    "lint": "esw webpack.config.* src buildScripts --color",
-    "lint:watch": "npm run lint -- --watch",
-    "security-check": "nsp check",
+    "name": "javascript-development-environment",
+    "version": "1.0.0",
+    "description": "JavaScript development environment Pluralsight course by Cory House",
+    "scripts": {
+        "prestart": "babel-node buildScripts/startMessage.js",
+        "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
+        "open:src": "babel-node buildScripts/srcServer.js",
+        "lint": "esw webpack.config.* src buildScripts --color",
+        "lint:watch": "npm run lint -- --watch",
+        "security-check": "nsp check",
 
-    "test": "_mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
-    "test:watch": "npm run test -- --watch"
-  },
-  "author": "Cory House",
-  "license": "MIT",
-  "dependencies": {
-    "whatwg-fetch": "1.0.0"
-  },
-  "devDependencies": {
+        "test": "_mocha --reporter progress buildScripts/testSetup.js \"src/**/*.test.js\"",
+        "test:watch": "npm run test -- --watch"
+    },
+    "author": "Cory House",
+    "license": "MIT",
+    "dependencies": {
+        "whatwg-fetch": "1.0.0"
+    },
+    "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
@@ -52,5 +52,5 @@
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
     "webpack-md5-hash": "0.0.5"
-  }
+    }
 }
