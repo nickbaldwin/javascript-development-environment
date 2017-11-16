@@ -1,6 +1,23 @@
+# macOS
+.DS_Store
+
+# WebStorm
+.idea/workspace.xml
+
+# npm binaries
+
+
+
+
+# generated files
+dist/
+
+
+
 # Logs
 logs
 *.log
+npm-debug.log
 npm-debug.log*
 
 # Runtime data
@@ -17,8 +34,6 @@ coverage
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
 
 # node-waf configuration
 .lock-wscript
@@ -27,8 +42,7 @@ coverage
 build/Release
 
 # Dependency directories
-node_modules
-jspm_packages
+node_modules/**/.bin/
 
 # Optional npm cache directory
 .npm
@@ -36,8 +50,6 @@ jspm_packages
 # Optional REPL history
 .node_repl_history
 
-#Webstorm
-.idea
 
 #prod build
 dist
